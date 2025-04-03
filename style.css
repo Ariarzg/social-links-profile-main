@@ -4,28 +4,19 @@
   --grey-900: #141414;
   --green: #c5f82a;
 }
-
-@font-face {
-  font-family: "Local-Inter";
-  src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf);
-}
-
 * {
   padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Local-Inter", "Inter", sans-serif;
-  color: white;
-  transition: 0.1s ease-in-out;
 }
 
 body {
   background: var(--grey-900);
   text-align: center;
-}
+  font-family: "Inter", sans-serif;
+  color: white;
+  transition: 0.1s ease-in-out;
 
-.container {
-  min-height: 100svh;
+  padding: 1rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +30,7 @@ body {
   background: var(--grey-800);
   border-radius: 0.5rem;
   padding: 2rem;
-  max-width: 90%;
+  max-width: 20rem;
 }
 
 .profile {
@@ -72,36 +63,34 @@ body {
   list-style-type: none;
 }
 
-.social-links-list li {
+.social-item {
   margin-top: 0.8rem;
   background: var(--grey-700);
   border-radius: 0.4rem;
 }
 
-.social-links-list li a {
+.link {
   display: block;
   padding: 0.8rem 0;
+
+  color: white;
 
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-
-  width: 100%;
-  height: 100%;
 }
-
-.social-links-list li:hover {
+.social-item:hover {
   background: white;
 }
 
-.social-links-list li:hover a {
+.social-item:hover a {
   color: var(--grey-700);
 }
 
-.social-links-list li:active {
+.social-item:active {
   background: var(--green);
 }
 
-.social-links-list li:active a {
+.social-item:active a {
   color: var(--grey-700);
 }
